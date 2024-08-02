@@ -1,0 +1,9 @@
+<view class="fm-control-zoom-bar" style="top:{{top}}rpx;left:{{left}}rpx;">
+    <view bindtap="zoomIn" class="fm-control-zoom-bar-button fm-control-zoom-button-bar-in" data-type="in">
+        <cover-image src="{{btnUrl}}+.png" style="width: 76rpx; height: 76rpx;margin:4rpx auto;"></cover-image>
+    </view>
+    <view class="fm-control-zoom-bar-hr"></view>
+    <view bindtap="zoomOut" class="fm-control-zoom-bar-button fm-control-zoom-button-bar-out" data-type="out">
+        <cover-image src="{{btnUrl}}-.png" style="width: 76rpx; height: 76rpx;margin:4rpx auto;"></cover-image>
+    </view>
+</view>

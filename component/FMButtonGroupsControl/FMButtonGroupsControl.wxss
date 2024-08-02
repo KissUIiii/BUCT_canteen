@@ -1,0 +1,34 @@
+.fm-control-groups-btn {
+    color: #1e82fa;
+    cursor: pointer;
+    font-size: .8em;
+    font-weight: 700;
+    height: 84rpx;
+    line-height: 84rpx;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fm-control-groups-btn,.fm-layer-list {
+    background-color: #fff;
+    border-radius: 4rpx;
+    box-shadow: 4rpx 4rpx 6rpx rgba(0,0,0,.3);
+    position: absolute;
+    width: 84rpx;
+    z-index: 1;
+}
+
+.fm-layer-list {
+    top: 184rpx;
+}
+
+.fm-btn-exit {
+    background-color: #fff;
+    border-radius: 4rpx;
+    box-shadow: 4rpx 4rpx 6rpx rgba(0,0,0,.3);
+    box-sizing: border-box;
+    position: absolute;
+    top: 0rpx;
+    width: 84rpx;
+    z-index: 2;
+}

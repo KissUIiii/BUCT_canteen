@@ -1,0 +1,5 @@
+<view class="fm-control-compass" style="top:{{top}}rpx;right:{{left}}rpx;">
+    <cover-view bindtap="rotateToZero" style="cursor: pointer; transform: rotate({{rotation}}deg);">
+        <cover-image src="{{btnUrl}}compass.png" style="width: 100rpx; height: 100rpx;"></cover-image>
+    </cover-view>
+</view>

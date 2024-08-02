@@ -1,0 +1,11 @@
+.fm-control-compass {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 4rpx;
+    display: flex;
+    height: 114rpx;
+    justify-content: center;
+    position: absolute;
+    width: 114rpx;
+    z-index: 1;
+}

@@ -1,0 +1,26 @@
+.fm-control-zoom-bar {
+    background-color: #fff;
+    border-radius: 10px!important;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+    position: absolute;
+    width: 84rpx;
+    z-index: 20;
+}
+
+.fm-control-zoom-bar-button {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 48rpx 48rpx;
+    height: 84rpx;
+    width: 84rpx;
+}
+
+.fm-control-zoom-bar-hr {
+    background: #cad9e5;
+    border: none;
+    display: block;
+    height: 2rpx;
+    margin: 4rpx 20%;
+    overflow: hidden;
+    width: 60%;
+}

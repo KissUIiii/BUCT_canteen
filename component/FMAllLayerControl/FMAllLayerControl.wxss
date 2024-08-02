@@ -1,0 +1,8 @@
+.fm-control-layer {
+    background-color: #fff;
+    border-radius: 4rpx;
+    box-shadow: 4rpx 4rpx 6rpx rgba(0,0,0,.3);
+    position: absolute;
+    width: 84rpx;
+    z-index: 1;
+}

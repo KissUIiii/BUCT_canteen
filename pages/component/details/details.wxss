@@ -1,0 +1,109 @@
+.container {
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e7e7eb;
+}
+
+.back-btn, .more-btn {
+  font-size: 18px;
+}
+
+.navbar-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dish-image {
+  width: 100%;
+  height: auto;
+}
+
+.dish-info {
+  padding: 15px;
+}
+
+.dish-price {
+  font-size: 24px;
+  color: #ff1493;
+  margin-bottom: 10px;
+}
+
+.dish-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.tag {
+  padding: 2px 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.dish-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.location-section {
+  padding: 15px;
+  border-top: 1px solid #e7e7eb;
+  border-bottom: 1px solid #e7e7eb;
+}
+
+.location-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.location-content {
+  font-size: 14px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.share-btn {
+  background-color: #007aff;
+}
+
+.navigate-btn {
+  background-color: #ff8c00;
+}
+
+.review-btn {
+  background-color: #ff4500;
+}

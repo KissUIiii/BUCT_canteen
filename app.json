@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/mapAll/mapAll",
+    "pages/my/my",
+
+    "pages/component/search/search",
+    "pages/component/details/details",
+    "pages/component/map/map"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "商城",
+    "navigationBarBackgroundColor": "#07a2ff",
+    "backgroundColor": "#fbf9fe"
+},
+"tabBar": {
+  "color": "#929292",
+  "backgroundColor": "#ffffff",
+  "selectedColor": "#07a2ff",
+  "borderStyle": "white",
+  "list": [
+      {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "image/shouye1.png",
+          "selectedIconPath": "image/shouye.jpg"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "image/category.png",
+        "selectedIconPath": "image/shouye.jpg"
+      },
+      {
+        "pagePath": "pages/mapAll/mapAll",
+        "text": "地图",
+        "iconPath": "image/map.png",
+        "selectedIconPath": "image/shouye.jpg"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/shouye.jpg"
+      }
+    ]
+  },
+  "style": "v2"
+}

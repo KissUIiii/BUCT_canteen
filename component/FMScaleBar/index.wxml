@@ -1,0 +1,6 @@
+<view class="fm-scale-bar" style="width:{{scaleWidth}}px; bottom: {{top}}rpx;left: {{left}}rpx;">
+    <view class="fm-scale-bar-text"> {{scale}} {{unit}}</view>
+    <view class="fm-scale-bar-bottom">
+        <view class="fm-scale-bar-bottom-line"></view>
+    </view>
+</view>

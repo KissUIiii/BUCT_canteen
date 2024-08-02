@@ -1,0 +1,38 @@
+.fm-scale-bar {
+    position: absolute;
+    width: 100px;
+    z-index: 10;
+}
+
+.fm-scale-bar-text {
+    color: #000;
+    cursor: default;
+    font-family: Arial,sans-serif;
+    font-size: 18px;
+    height: 24px;
+    left: 0;
+    line-height: 18px;
+    overflow: visible;
+    position: absolute;
+    text-align: center;
+    text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;
+    top: 0;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.fm-scale-bar-bottom {
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    height: 7px;
+    margin-top: 18px;
+    position: relative;
+}
+
+.fm-scale-bar-bottom-line {
+    background-color: #000;
+    bottom: 0;
+    height: 5px;
+    position: absolute;
+    width: 100%;
+}

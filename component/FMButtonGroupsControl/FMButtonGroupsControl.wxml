@@ -1,0 +1,16 @@
+<view bindtap="folderGroupBtns" class="fm-control-groups-btn" style="top:{{top}}rpx;right:{{left}}rpx;"> {{focusGroupName}}
+</view>
+<scroll-view class="fm-layer-list fm-groups" scrollIntoView="gid_{{focusGroupID}}" scrollWithAnimation="true" scrollY="true" style="overflow: hidden; height: {{scrollHeight}}rpx;right:{{left}}rpx;top:{{top+84+40}}rpx;" wx:if="{{isShowList===true}}">
+    <view wx:for="{{groupIDs}}" wx:key="key">
+        <view bindtap="switchGroup" data-gid="{{item.gid}}" id="gid_{{item.gid}}" style="display: inline-block; text-align: center; width: 84rpx; height: 84rpx; line-height: 84rpx; margin: 0px; cursor: pointer; font-size: 0.8em; font-weight: bold; color: rgb(102, 102, 102);">
+            <view style="color:{{focusGroupID==item.gid?'rgb(30, 130, 250)':'rgb(102, 102, 102)'}}; text-transform: uppercase;"> {{item.gname}} </view>
+        </view>
+        <view style="height: 1px; border-top: 1px solid rgba(153, 153, 153, 0.45); border-right: none; border-bottom: none; border-left: none; border-image: initial; width: 60%; margin: 0px 20%;" wx:if="{{item.gid!==1}}"></view>
+    </view>
+</scroll-view>
+<view bindtap="enterBuilding" class="fm-btn-exit" style="padding: 20rpx; cursor: pointer; top:{{scrollHeight+top+84+40+40}}rpx;right:{{left}}rpx;" wx:if="{{isInBuilding}}">
+    <cover-image src="{{btnUrl}}enter.png" style="width: 44rpx; height: 44rpx;"></cover-image>
+</view>
+<view bindtap="exitBuilding" class="fm-btn-exit" style="padding: 20rpx; cursor: pointer; top:{{scrollHeight+top+84+40+40}}rpx;right:{{left}}rpx;" wx:if="{{isOutBuilding}}">
+    <cover-image src="{{btnUrl}}exit.png" style="width: 44rpx; height: 44rpx;"></cover-image>
+</view>

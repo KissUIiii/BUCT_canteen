@@ -1,0 +1,14 @@
+.fm-btn-exit,.fm-control-groups {
+    background-color: #fff;
+    border-radius: 4rpx;
+    box-shadow: 4rpx 4rpx 6rpx rgba(0,0,0,.3);
+    position: absolute;
+    width: 84rpx;
+}
+
+.fm-btn-exit {
+    box-sizing: border-box;
+    right: 0rpx;
+    top: 0rpx;
+    z-index: 1;
+}

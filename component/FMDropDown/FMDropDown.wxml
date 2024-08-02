@@ -1,0 +1,9 @@
+<view class="dropdown">
+    <view bindtap="toggleDropdown" class="menu" data-toggle="dropdown"> {{dropList[currentIndex].name}} <view class="triangle"></view>
+    </view>
+    <scroll-view class="dropdown-menu" wx:if="{{dropdownShow}}">
+        <view wx:for="{{dropList}}" wx:key="key">
+            <view bindtap="toggleMode" class="{{currentIndex===item.key?'menu-item active':'menu-item'}}" data-key="{{item.key}}">{{item.name}}</view>
+        </view>
+    </scroll-view>
+</view>

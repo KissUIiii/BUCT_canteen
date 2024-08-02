@@ -1,0 +1,68 @@
+<view class="main">
+  <!-- 滑动窗口 -->
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item.src}}" mode="aspectFill" class="slide-image" style="width:100%; height:100%;" data-url="{{item.url}}" bindtap="onImageClick" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 搜索 -->
+  <view class="search">
+    <navigator url="../component/search/search">
+      <view class="search-text">
+        <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+        搜 索
+      </view>
+    </navigator>
+  </view>
+
+  <!-- 分类 -->
+  <view class="container">
+    <view class="button-wrapper">
+      <view class="button" bindtap="onImageClick" data-url="/pages/mapAll/mapAll">
+        <image src="https://s2.loli.net/2024/08/01/lGp6Aeg1qhMmR2v.png" class="button-image"></image>
+      </view>
+      <view class="button" bindtap="onImageClick" data-url="../component/details/details">
+        <image src="https://s2.loli.net/2024/08/01/I3GZHOnqcfzdKNF.jpg" class="button-image"></image>
+      </view>
+    </view>
+  </view>
+
+<!-- 今日上新 -->
+<view class="commen_title">
+  <text>今日上新</text>
+</view>
+<view class="single_goods">
+  <view class="single_image_wrap">
+    <image src="https://i2.chuimg.com/ca4cb27288a811e6b87c0242ac110003_601w_600h.jpg?imageView2/2/w/660/interlace/1/q/75" class="single_goods_image"></image>
+  </view>
+  <view class="single_goods_infor">
+    <navigator url="../spdetail/spdetail">
+      <view class="single_goods_name">
+        <text>锅包肉</text>
+      </view>
+      <!-- 添加标签视图 -->
+      <view class="tags_wrap">
+        <view class="tag">东北菜</view>
+        <view class="tag">酸甜</view>
+        <view class="tag">荤菜</view>
+      </view>
+
+      <view class="single_goods_address">
+        <text>这里是锅包肉的菜品介绍</text>
+      </view>
+      <view class="single_goods_price">
+        <text>¥169.00</text>
+        <view class="carImgWrap">
+          <image src="" class="carImg"></image>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+</view>

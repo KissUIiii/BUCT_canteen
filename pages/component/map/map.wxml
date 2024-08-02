@@ -1,0 +1,4 @@
+<view class="container">
+    <canvas disableScroll bindtouchend="touchEnd" bindtouchmove="touchMove" bindtouchstart="touchStart" id="fengMap" style="width: 100%; height: 100%;" type="webgl"></canvas>
+    <canvas id="temp" type="2d"></canvas>
+</view>

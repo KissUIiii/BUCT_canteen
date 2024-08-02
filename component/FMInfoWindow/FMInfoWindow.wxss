@@ -1,0 +1,39 @@
+.fm-info-window {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    box-sizing: border-box;
+    display: none;
+    height: 90px;
+    left: 0rpx;
+    padding: 5px;
+    position: absolute;
+    top: 0rpx;
+    width: 160px;
+    z-index: 10;
+}
+
+.show {
+    display: block;
+}
+
+.fm-control-popmarker-bot2 {
+    border: 15px dashed transparent;
+    border-top: 15px solid rgba(0,0,0,.2);
+    bottom: -30px;
+    overflow: hidden;
+}
+
+.fm-control-popmarker-bot2,.fm-control-popmarker-top2 {
+    font-size: 0;
+    height: 0;
+    left: 60px;
+    position: absolute;
+    width: 0;
+}
+
+.fm-control-popmarker-top2 {
+    border: 15px dashed transparent;
+    border-top: 15px solid #fff;
+    bottom: -29px;
+    overflow: auto;
+}

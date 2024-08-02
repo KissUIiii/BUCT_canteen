@@ -1,0 +1,150 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 修改为 flex-start 以确保容器顶部对齐 */
+  padding: 20px 0; /* 添加上下内边距以避免悬浮 */
+  background-color: #f5f6f7;
+}
+
+/* 按钮容器的样式 */
+.button-wrapper {
+  display: flex; /* 使按钮容器成为 flex 容器 */
+  width: 90%; /* 按钮容器的宽度为其父元素的90% */
+  justify-content: space-between; /* 在按钮之间留出空间 */
+}
+
+/* 按钮的样式 */
+.button {
+  width: 48%; /* 按钮宽度为其父容器的48% */
+  position: relative; /* 设置相对定位以用于绝对定位的子元素 */
+}
+
+/* 伪元素，用于创建1:1的纵横比 */
+.button::after {
+  content: ""; /* 内容为空 */
+  display: block; /* 设置为块级元素 */
+  padding-bottom: 100%; /* 设置下内边距为宽度的100%，从而实现1:1纵横比 */
+}
+
+/* 按钮图片的样式 */
+.button-image {
+  position: absolute; /* 绝对定位 */
+  top: 0; /* 距离顶部为0 */
+  left: 0; /* 距离左侧为0 */
+  width: 100%; /* 宽度为父元素的100% */
+  height: 100%; /* 高度为父元素的100% */
+  border-radius: 15px 15px 15px 15px; /* 四个圆角均为15px */
+  object-fit: cover; /* 保持图像的宽高比，裁剪以填充元素框 */
+}
+
+/* 轮播项的样式 */
+.swiper-item{
+  display: block; /* 设置为块级元素 */
+}
+
+/* 幻灯片图片的样式 */
+.slide-image {
+  width: 100%; /* 宽度为其父元素的100% */
+}
+
+/* 轮播容器的样式 */
+swiper {
+  width: 100%; /* 宽度为其父元素的100% */
+}
+
+/* 搜索容器的样式 */
+.search{
+  padding: 20rpx; /* 内边距为20rpx（rpx是微信小程序中的相对单位） */
+  background-color: #f5f6f7;
+}
+
+/* 搜索文本的样式 */
+.search-text{
+  display: flex; /* 使搜索文本成为 flex 容器 */
+  justify-content: center; /* 水平居中对齐子元素 */
+  align-items: center; /* 垂直居中对齐子元素 */
+  height: 50rpx; /* 高度为50rpx */
+  color: #aaa; /* 文字颜色为灰色 */
+  text-align: center; /* 文本居中对齐 */
+  border: 1px solid #ddd; /* 边框为1px的实线，颜色为浅灰色 */
+  border-radius: 20rpx; /* 圆角半径为20rpx */
+}
+
+/* 搜索文本内图标的样式 */
+.search-text icon{
+  margin-right: 20rpx; /* 右外边距为20rpx */
+}
+
+.commen_title {
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #E9E9E9;
+  margin: 10px 10px;
+}
+/* 整体容器样式 */
+.single_goods_image {
+  width: 80px;
+  height: 80px;
+}
+.single_goods {
+  position: relative;
+  height: 100px;
+  background-color: #FFF;
+  padding-left: 100px;
+  border-bottom: 1px solid #E7E7EB;
+  margin:10px 20px;
+}
+.single_image_wrap {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.single_goods_infor {
+  padding: 10px 0;
+  position: relative;
+  height: 80px;
+}
+.single_goods_name {
+  font-size: 14px;
+}
+.single_goods_price {
+  font-size: 14px;
+  color: #FF1493;
+  position: absolute;
+  left: 0;
+  bottom: 0; /* 将价格移到底部 */
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+}
+.single_goods_address {
+  color: #929292;
+  font-size: 12px;
+  margin-top: -5px; /* 将菜品介绍往上移动 */
+}
+.carImgWrap {
+  float: right;
+  margin-right: 15px;
+}
+.carImg {
+  width: 20px;
+  height: 20px;
+}
+
+/* 标签区样式 */
+.tags_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px; /* 减少标签与菜品介绍之间的间距 */
+}
+
+.tag {
+  padding: 2px 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #333;
+}

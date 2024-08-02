@@ -1,0 +1,35 @@
+<image class="dish-image" src="https://th.bing.com/th/id/OIP.GoTf0kMVqL1U57bKdO6TzQAAAA?rs=1&pid=ImgDetMain" mode="aspectFill" style="width:100%;height:auto;"></image>
+<view class="container">
+  <!-- 菜品图片 -->
+  
+
+  <!-- 菜品信息 -->
+  <view class="dish-info">
+    <view class="dish-price">¥16</view>
+    <view class="dish-name">烧乳鸽</view>
+    <view class="tags">
+      <view class="tag">粤菜</view>
+      <view class="tag">烧菜</view>
+      <view class="tag">甜咸</view>
+    </view>
+    <view class="dish-description">
+      烧乳鸽的需要的原料有乳鸽、银芽、酱油、盐、蔗糖、生、干辣椒丝、花生油、米醋、花椒油、料酒、香蒜、白醋等。
+    </view>
+  </view>
+
+  <!-- 位置和导航 -->
+  <view class="location-section">
+    <view class="location-title">位置</view>
+    <view class="location-content">
+      <text>北京化工大学(东校区)</text>
+      <navigator url="/pages/restaurant/restaurant">东校第三食堂粤菜窗口</navigator>
+    </view>
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="buttons">
+    <button class="button share-btn" bindtap="shareDish">分享</button>
+    <button class="button navigate-btn" bindtap="navigateToRestaurant">食堂导航</button>
+    <button class="button review-btn" bindtap="reviewDish">评价投诉</button>
+  </view>
+</view>

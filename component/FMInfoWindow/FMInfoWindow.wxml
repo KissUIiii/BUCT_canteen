@@ -1,0 +1,3 @@
+<view class="fm-info-window {{isShow==true?'show':''}}" style="left:{{screenPosition.left}}; top:{{screenPosition.top}}"> 这是一个信息窗示例 <span class="fm-control-popmarker-bot2"></span>
+    <span class="fm-control-popmarker-top2"></span>
+</view>

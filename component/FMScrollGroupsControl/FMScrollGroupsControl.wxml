@@ -1,0 +1,28 @@
+<view class="fm-control-groups" style="top:{{top}}rpx;right:{{left}}rpx;">
+    <cover-view bindtap="switchLayers" class="fm-control-groups-layer fm-btn-layer" style="padding: 20rpx; cursor: pointer;">
+        <cover-image src="{{btnUrl}}layer.png" style="width: 44rpx; height: 44rpx;" wx:if="{{!isAllLayer}}"></cover-image>
+        <cover-image src="{{btnUrl}}layers.png" style="width: 44rpx; height: 44rpx;" wx:else></cover-image>
+    </cover-view>
+    <cover-view bindtap="goTop" class="scroll" style="height: 36rpx; cursor: pointer;" wx:if="{{needArrow}}">
+        <cover-image src="{{btnUrl}}arrow1.png" style="width: 20rpx; height: 12rpx; margin-left:32rpx;margin-top: 8rpx;" wx:if="{{!isTop}}"></cover-image>
+        <cover-image src="{{btnUrl}}arrow3.png" style="width: 20rpx; height: 12rpx; margin-left:32rpx;margin-top: 8rpx;" wx:else></cover-image>
+    </cover-view>
+    <scroll-view class="fm-layer-list" scrollIntoView="gid_{{focusGroupID}}" scrollTop="{{scrollTop}}" scrollWithAnimation="true" scrollY="true" style="overflow: hidden; height: {{scrollHeight}}rpx;">
+        <view wx:for="{{groupIDs}}" wx:key="key">
+            <view bindtap="switchGroup" data-gid="{{item.gid}}" id="gid_{{item.gid}}" style="display: inline-block; text-align: center; width: 84rpx; height: 84rpx; line-height: 84rpx; margin: 0px; cursor: pointer; font-size: 0.8em; font-weight: bold; color: rgb(102, 102, 102);">
+                <view style="color:{{focusGroupID==item.gid?'rgb(30, 130, 250)':'rgb(102, 102, 102)'}};text-transform: uppercase;"> {{item.gname}} </view>
+            </view>
+            <view style="height: 1px; border-top: 1px solid rgba(153, 153, 153, 0.45); border-right: none; border-bottom: none; border-left: none; border-image: initial; width: 60%; margin: 0px 20%;" wx:if="{{item.gid!==1}}"></view>
+        </view>
+    </scroll-view>
+    <cover-view bindtap="goBottom" class="scroll" style="height: 36rpx; cursor: pointer;" wx:if="{{needArrow}}">
+        <cover-image src="{{btnUrl}}arrow2.png" style="width: 20rpx; height: 12rpx; margin-left:32rpx" wx:if="{{!isBottom}}"></cover-image>
+        <cover-image src="{{btnUrl}}arrow4.png" style="width: 20rpx; height: 12rpx; margin-left:32rpx" wx:else></cover-image>
+    </cover-view>
+    <view bindtap="enterBuilding" class="fm-btn-exit" style="padding: 20rpx; cursor: pointer; top:{{exitTop}}rpx;" wx:if="{{isInBuilding}}">
+        <cover-image src="{{btnUrl}}enter.png" style="width: 44rpx; height: 44rpx;"></cover-image>
+    </view>
+    <view bindtap="exitBuilding" class="fm-btn-exit" style="padding: 20rpx; cursor: pointer; top:{{exitTop}}rpx;" wx:if="{{isOutBuilding}}">
+        <cover-image src="{{btnUrl}}exit.png" style="width: 44rpx; height: 44rpx;"></cover-image>
+    </view>
+</view>

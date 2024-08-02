@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="search-box">
+        <!-- 输入框，绑定输入事件 -->
+        <input class="search-input" placeholder="搜索" value="{{value}}" bindinput="searchInput" />
+        <!-- 搜索图标 -->
+        <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+        <!-- 搜索按钮，绑定点击事件 -->
+        <button class="search-btn" bindtap="onSearch">搜索</button>
+        <!-- 取消按钮，条件显示，绑定点击事件 -->
+        <text class="search-btn" wx:if="{{showResult}}" bindtap="cancelSearch">取消</text>
+    </view>
+
+  <view class="tags-section">
+    <text class="tags-title">食堂</text>
+    <view class="tags-list">
+      <block wx:for="{{canteenTags}}" wx:key="id">
+        <view class="tag {{item.selected ? 'selected' : ''}}" bindtap="onTagClick" data-id="{{item.id}}" data-type="canteen">
+          {{item.name}}
+        </view>
+      </block>
+    </view>
+    
+    <text class="tags-title">菜系</text>
+    <view class="tags-list">
+      <block wx:for="{{cuisineTags}}" wx:key="id">
+        <view class="tag {{item.selected ? 'selected' : ''}}" bindtap="onTagClick" data-id="{{item.id}}" data-type="cuisine">
+          {{item.name}}
+        </view>
+      </block>
+    </view>
+    
+    <text class="tags-title">口味</text>
+    <view class="tags-list">
+      <block wx:for="{{flavorTags}}" wx:key="id">
+        <view class="tag {{item.selected ? 'selected' : ''}}" bindtap="onTagClick" data-id="{{item.id}}" data-type="flavor">
+          {{item.name}}
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

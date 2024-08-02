@@ -1,0 +1,10 @@
+<view class="wrap">
+   <view calss="container">
+        <!--头部-->
+        <view class="header">
+            <view class="xinxi">
+            <text>姓名</text>
+            </view>      
+        </view>
+   </view>
+</view>
